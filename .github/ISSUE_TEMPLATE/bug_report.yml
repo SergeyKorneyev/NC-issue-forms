@@ -1,4 +1,4 @@
-name: "Bug report Nextcloud"
+name: "Bug report"
 description: "Use this template if you're running into issues with the ONLYOFFICE-Nextcloud integration."
 body:
   - type: checkboxes
@@ -8,6 +8,26 @@ body:
       options:
       - label: "I have used the [search tool](https://github.com/ONLYOFFICE/onlyoffice-nextcloud/issues?q=) and did not find an issue describing my bug."
         required: true
+  - type: checkboxes
+    id: bug
+    attributes:
+      label: "This is a bug."
+      options:
+      - label: "I wish to report a bug, this is not a question nor an attempt to resolve a configuration issue."
+        required: true
+  - type: dropdown
+    id: os
+    attributes:
+      label: "Operating system"
+      description: "Select the OS where the Document Server is installed."
+      multiple: false
+      options:
+      - Debian/Ubuntu
+      - RHEL/CentOS
+      - Windows Server
+      - Other
+    validations:
+      required: true
   - type: dropdown
     id: installation
     attributes:
@@ -25,9 +45,9 @@ body:
   - type: input
     id: other
     attributes:
-      label: "Installation type (other)"
-      description: "If you did not find your installation type in the list above, please specify it here."
-      placeholder: "snap package"
+      label: "Installation details"
+      description: "If you did not find your installation type or your OS in the lists above, please provide the information here. You can also use this field to specify the OS version."
+      placeholder: "snap package on Ubuntu 22.04"
   - type: input
     id: dsversion
     attributes:
@@ -75,4 +95,4 @@ body:
     id: additional
     attributes:
       label: "Additional information"
-      description: "If you have any screenshots, videos, or other information that you feel is necessary to better describe the issue, feel free to leave them here."
+      description: "If you have any screenshots, videos, or other information that you think necessary to better describe the issue, feel free to post them here."
