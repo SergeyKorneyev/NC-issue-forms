@@ -1,5 +1,5 @@
 name: "Bug report"
-description: "Use this template if you're running into issues with the ONLYOFFICE-Nextcloud integration."
+description: "Use this form if you're running into issues with the ONLYOFFICE-Nextcloud integration."
 body:
   - type: checkboxes
     id: acknowledge
