@@ -27,7 +27,7 @@ body:
     attributes:
       label: "Installation type (other)"
       description: "If you didn't find your installation type in the list above, please specify it here."
-      placeholder" "snap package"
+      placeholder: "snap package"
   - type: input
     id: dsversion
     attributes:
