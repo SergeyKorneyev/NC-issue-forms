@@ -8,7 +8,7 @@ body:
       options:
       - label: "I have used the [search tool](https://github.com/ONLYOFFICE/onlyoffice-nextcloud/issues?q=) and did not find an issue describing my bug."
         required: true
-      - label: "I wish to report a bug. This is not a question nor an attempt to resolve a configuration issue."
+      - label: "I wish to report a bug. This is not a question or an attempt to resolve a configuration issue."
         required: true
   - type: dropdown
     id: os
