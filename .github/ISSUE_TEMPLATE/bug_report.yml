@@ -2,18 +2,13 @@ name: "Bug report"
 description: "Use this template if you're running into issues with the ONLYOFFICE-Nextcloud integration."
 body:
   - type: checkboxes
-    id: unique
+    id: acknowledge
     attributes:
-      label: "This issue is unique."
+      label: "I acknowledge that:"
       options:
       - label: "I have used the [search tool](https://github.com/ONLYOFFICE/onlyoffice-nextcloud/issues?q=) and did not find an issue describing my bug."
         required: true
-  - type: checkboxes
-    id: bug
-    attributes:
-      label: "This is a bug."
-      options:
-      - label: "I wish to report a bug, this is not a question nor an attempt to resolve a configuration issue."
+      - label: "I wish to report a bug. This is not a question nor an attempt to resolve a configuration issue."
         required: true
   - type: dropdown
     id: os
