@@ -1,4 +1,4 @@
-name: "Bug report"
+name: "Bug report Nextcloud"
 description: "Use this template if you're running into issues with the ONLYOFFICE-Nextcloud integration."
 body:
   - type: checkboxes
