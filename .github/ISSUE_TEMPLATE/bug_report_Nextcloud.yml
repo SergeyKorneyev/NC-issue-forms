@@ -1,0 +1,78 @@
+name: "Bug report"
+description: "Use this template if you're running into issues with the ONLYOFFICE-Nextcloud integration."
+body:
+  - type: checkboxes
+    id: unique
+    attributes:
+      label: "This issue is unique."
+      options:
+      - label: "I have used the [search tool](https://github.com/ONLYOFFICE/onlyoffice-nextcloud/issues?q=) and did not find an issue describing my bug."
+        required: true
+  - type: dropdown
+    id: installation
+    attributes:
+      label: "Document Server installation type"
+      description: "Select the way you've installed the Document Server."
+      multiple: false
+      options:
+      - Docker
+      - DEB package
+      - RPM package
+      - EXE
+      - Other
+    validations:
+      required: true
+  - type: input
+    id: other
+    attributes:
+      label: "Installation type (other)"
+      description: "If you didn't find your installation type in the list above, please specify it here."
+      placeholder" "snap package"
+  - type: input
+    id: dsversion
+    attributes:
+      label: "Document Server version"
+      description: "Please specify the version of the Document Server you have installed. Before submitting an issue, make sure you are using the [latest version](https://github.com/ONLYOFFICE/DocumentServer/releases)."
+      placeholder: "Example: 7.2.0"
+    validations:
+      required: true
+  - type: input
+    id: dmsversion
+    attributes:
+      label: "Nextcloud version"
+      description: "Please specify the version of your Nextcloud server."
+      placeholder: "24.0.5"
+    validations:
+      required: true
+   - type: input
+    id: connector
+    attributes:
+      label: "Connector version"
+      description: "Please specify the version of the ONLYOFFICE connector app in Nextcloud."
+      placeholder: "7.5.4"
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: "Expected Behavior"
+      description: "What did you expect to happen? Did this work in previous versions?"
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: "Actual Behavior"
+      description: "What actually happened?"
+    validations:
+      required: true
+  - type: textarea
+    id: scenario
+    attributes:
+      label: "Scenario"
+      description: "Provide information on how to reproduce the issue. Make sure your instructions are clear."
+  - type: textarea
+    id: additional
+    attributes:
+      label: "Additional information"
+      description: "If you have any screenshots, videos, or other information that you feel is necessary to better describe the issue, feel free to leave them here."
