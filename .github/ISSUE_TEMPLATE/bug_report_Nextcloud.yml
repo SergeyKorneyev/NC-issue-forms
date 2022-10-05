@@ -26,14 +26,14 @@ body:
     id: other
     attributes:
       label: "Installation type (other)"
-      description: "If you didn't find your installation type in the list above, please specify it here."
+      description: "If you did not find your installation type in the list above, please specify it here."
       placeholder: "snap package"
   - type: input
     id: dsversion
     attributes:
       label: "Document Server version"
       description: "Please specify the version of the Document Server you have installed. Before submitting an issue, make sure you are using the [latest version](https://github.com/ONLYOFFICE/DocumentServer/releases)."
-      placeholder: "Example: 7.2.0"
+      placeholder: "7.2.0"
     validations:
       required: true
   - type: input
