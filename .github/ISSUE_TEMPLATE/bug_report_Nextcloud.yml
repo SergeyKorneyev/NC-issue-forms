@@ -44,7 +44,7 @@ body:
       placeholder: "24.0.5"
     validations:
       required: true
-   - type: input
+  - type: input
     id: connector
     attributes:
       label: "Connector version"
