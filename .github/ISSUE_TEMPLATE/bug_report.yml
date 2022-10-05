@@ -42,13 +42,13 @@ body:
     attributes:
       label: "Installation details"
       description: "If you did not find your installation type or your OS in the lists above, please provide the information here. You can also use this field to specify the OS version."
-      placeholder: "snap package on Ubuntu 22.04"
+      placeholder: "Example: snap package on Ubuntu 22.04"
   - type: input
     id: dsversion
     attributes:
       label: "Document Server version"
       description: "Please specify the version of the Document Server you have installed. Before submitting an issue, make sure you are using the [latest version](https://github.com/ONLYOFFICE/DocumentServer/releases)."
-      placeholder: "7.2.0"
+      placeholder: "Example: 7.2.0"
     validations:
       required: true
   - type: input
@@ -56,7 +56,7 @@ body:
     attributes:
       label: "Nextcloud version"
       description: "Please specify the version of your Nextcloud server."
-      placeholder: "24.0.5"
+      placeholder: "Example: 24.0.5"
     validations:
       required: true
   - type: input
@@ -64,7 +64,7 @@ body:
     attributes:
       label: "Connector version"
       description: "Please specify the version of the ONLYOFFICE connector app in Nextcloud."
-      placeholder: "7.5.4"
+      placeholder: "Example: 7.5.4"
     validations:
       required: true
   - type: textarea
